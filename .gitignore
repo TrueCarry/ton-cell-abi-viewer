@@ -26,3 +26,8 @@ dist-ssr
 .vercel
 download.b64
 download.bin
+
+coverage/
+playwright-report/
+test-results/
+.vitest/

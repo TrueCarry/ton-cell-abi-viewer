@@ -5,9 +5,8 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
     "skipLibCheck": true,
-
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
@@ -15,9 +14,8 @@
     "noEmit": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-
-    /* Linting */
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,

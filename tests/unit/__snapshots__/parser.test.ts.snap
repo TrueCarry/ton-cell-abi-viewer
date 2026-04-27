@@ -1,0 +1,115 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`stable parser formatting snapshots > formats custom TLB parser output as JSON 1`] = `
+"{
+  "status": "success",
+  "parser": "custom-tlb",
+  "provenance": {
+    "parser": "custom-tlb",
+    "confidence": 0.98
+  },
+  "cell": {
+    "bits": 32,
+    "refs": 0,
+    "depth": 0,
+    "rootIndex": 0,
+    "roots": 1,
+    "hash": "0444bfe0dedc5105513214073b29e308f0dd13642522f0adab9f0ee7244e9898"
+  },
+  "data": {
+    "kind": "Foo",
+    "x": 42
+  },
+  "warnings": []
+}"
+`;
+
+exports[`stable parser formatting snapshots > formats text comment parser output as JSON 1`] = `
+"{
+  "status": "success",
+  "parser": "known-abi",
+  "provenance": {
+    "parser": "known-abi",
+    "confidence": 0.95
+  },
+  "cell": {
+    "bits": 104,
+    "refs": 0,
+    "depth": 0,
+    "rootIndex": 0,
+    "roots": 1,
+    "hash": "22f84dbe4cb272dc58b3b378250be1423fc19b6fcc663839ea9c93afb1bf0a4a"
+  },
+  "data": {
+    "kind": "AbiDecoded",
+    "category": "comment",
+    "name": "comment.text",
+    "decoder": "decodeTextComment",
+    "confidence": "exact",
+    "opcode": "0x00000000",
+    "value": {
+      "text": "hello ton",
+      "body": {
+        "kind": "Cell",
+        "bits": 104,
+        "refs": 0,
+        "hash": "22f84dbe4cb272dc58b3b378250be1423fc19b6fcc663839ea9c93afb1bf0a4a",
+        "boc": "b5ee9c7241010101000f00001a0000000068656c6c6f20746f6ea5d717ee"
+      },
+      "remainder": {
+        "bits": 72,
+        "refs": 0,
+        "cell": {
+          "kind": "Cell",
+          "bits": 72,
+          "refs": 0,
+          "hash": "d0815b796a490bfcfd4c00719b6125a612f23a0849e44c9a246d30f569bb9f3f",
+          "boc": "b5ee9c7241010101000b00001268656c6c6f20746f6ea9cc075b"
+        }
+      }
+    }
+  },
+  "warnings": []
+}"
+`;
+
+exports[`stable parser formatting snapshots > formats text comment parser output as YAML 1`] = `
+"status: success
+parser: known-abi
+provenance:
+  parser: known-abi
+  confidence: 0.95
+cell:
+  bits: 104
+  refs: 0
+  depth: 0
+  rootIndex: 0
+  roots: 1
+  hash: 22f84dbe4cb272dc58b3b378250be1423fc19b6fcc663839ea9c93afb1bf0a4a
+data:
+  kind: AbiDecoded
+  category: comment
+  name: comment.text
+  decoder: decodeTextComment
+  confidence: exact
+  opcode: "0x00000000"
+  value:
+    text: hello ton
+    body:
+      kind: Cell
+      bits: 104
+      refs: 0
+      hash: 22f84dbe4cb272dc58b3b378250be1423fc19b6fcc663839ea9c93afb1bf0a4a
+      boc: b5ee9c7241010101000f00001a0000000068656c6c6f20746f6ea5d717ee
+    remainder:
+      bits: 72
+      refs: 0
+      cell:
+        kind: Cell
+        bits: 72
+        refs: 0
+        hash: d0815b796a490bfcfd4c00719b6125a612f23a0849e44c9a246d30f569bb9f3f
+        boc: b5ee9c7241010101000b00001268656c6c6f20746f6ea9cc075b
+warnings: []
+"
+`;
